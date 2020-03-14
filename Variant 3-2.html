@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<!--Создать файл, добавить обработку события "изменение размера окна". При срабатывании этого метода скрыть с документа 
+все элементы со ссылками (href)-->
+   <head>
+	 <script src="jquery-3.4.1.min.js">
+	 </script>
+	 <script>
+	     $(document).ready(function() {
+		     $(window).resize(function() {
+			     $("[href]").hide();
+			     }); 
+			 });
+	 </script>		 
+   </head>
+   <body>	
+     <h2>Полезные ссылки для самостоятельного изучения английского языка:</h2>
+	 <ul type="circle">
+						  <li type=circle><a href="http://www.interpals.net/index.php">Interpals</a>
+						   - здесь можно найти много друзей по переписке со всего мира и помогать им изучать язык.</li>
+						  <li type=circle><a href="https://www.postcrossing.com">Postcrossing</a>
+						   - международный проект, суть которого заключается в обмене открытками между случайно выбранными людьми, в большинстве случаев на английском языке.</li>
+						  <li type=circle><a href="https://www.mylanguageexchange.com">Mylanguageexchange</a>
+						   - социальная сеть, в которой можно выбрать идеального партнера по языку: указать родной язык, страну и примерный возраст желаемого напарника.</li>
+						  <li type=circle><a href="https://www.real-english.com">Real-English</a>
+						   - сайт с уроками, статьями и видео.</li>
+						  <li type=circle><a href="https://www.rosettastone.com/">Sharedtalk</a>
+						   - здесь можно пообщаться с иностранцами по чату и микрофону.</li>
+						</ul>
+   </body>
+</html>
